@@ -1,0 +1,53 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlex</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><i class="fa-solid fa-list-check"></i> TaskFlex</a>
+        </div>
+        <nav>
+            <h1>Organize suas tarefas com facilidade!</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-content">
+                <section class="tasks">
+                    <h1 class="tasks__title">Lista de Tarefas</h2>
+                        <div class="add">
+                            <button onclick="addTask()" class="add__btn">Adicionar</button>
+                            <input id="titleNewTask" class="add__input" type="text"
+                                placeholder="Digite o título da nova tarefa" />
+                        </div>
+                        <div class="columns">
+                            <article class="column" id="todo">
+                                <h3 class="column__title">A fazer</h3>
+                            </article>
+                            <article class="column" id="doing">
+                                <h3 class="column__title">Fazendo</h3>
+                            </article>
+                            <article class="column" id="done">
+                                <h3 class="column__title">Pronto</h3>
+                            </article>
+                        </div>
+                </section>
+            </div>
+            <dialog id="popupDialog">
+                <div id="popupContent"></div>
+            </dialog>
+        </div>
+
+    </main>
+    <footer></footer>
+</body>
+<script type="text/javascript" src="scripts/script.js"></script>
+
+</html>

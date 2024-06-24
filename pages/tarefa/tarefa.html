@@ -1,0 +1,28 @@
+<div>
+    <div class="header">
+        <h2>Tarefa</h2>
+        <span id="closeBtn">&times;</span>
+    </div>
+    <form id="taskForm">
+        <input type="hidden" id="id" name="id" value="">
+
+        <label for="title">Título</label>
+        <input type="text" id="title" name="title" >
+
+        <label for="createDate">Data de criação</label>
+        <input type="date" id="createDate" name="createDate">
+
+        <label for="desc">Descrição</label>
+        <textarea id="desc" name="desc" rows="4"></textarea>
+
+        <label for="status">Status</label>
+        <select id="status" name="status" required>
+            <option value="TODO">A fazer</option>
+            <option value="DOING">Fazendo</option>
+            <option value="DONE">Pronto</option>
+        </select>
+
+        <button class="delete" onclick="editTask()" type="submit">Salvar</button>
+        <button class="edit" onclick="deleteTask()" type="submit">Deletar</button>
+    </form>
+</div>
